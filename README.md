@@ -76,6 +76,17 @@ After deployment, you can access the wallet’s UI via the generated frontend UR
    - **`IC_ETH_WALLET_CANISTER`**: The deployed canister ID for the Ethereum wallet on ICP.
    - **`OPENAI_API_KEY`**: Required to enable AI interactions through OpenAI’s models.
 
+   To generate an Internet Computer private key, follow these steps:
+   ```bash
+   dfx identity new ai_agent_identity --storage-mode=plaintext
+   dfx identity export ai_agent_identity > ai_agent_identity.pem
+   ```
+   Extract the raw private key:
+   ```bash
+   dfx identity export ai_agent_identity | openssl ec -text -noout | grep -A 3 priv: | tail -n +2 | tr -d '[:space:]:' | tr -d '\n'
+   ```
+   Copy and paste this private key into your `.env` file.
+
 3. **Run the AI Agent**:
    ```bash
    pnpm install  # Install dependencies
@@ -83,6 +94,8 @@ After deployment, you can access the wallet’s UI via the generated frontend UR
    ```
 
 Once running, you can interact with the AI agent using natural language commands.
+
+Press **Enter** to begin interacting with the agent.
 
 Example prompts:
 ```bash
@@ -131,9 +144,8 @@ We welcome contributions! Open issues or submit pull requests to improve this te
 
 ## 📚 Learn More
 
-- [Eliza AI Framework](https://github.com/your-eliza-framework-link)
+- [Eliza AI Framework](https://github.com/elizaOS/eliza)
 - [Internet Computer Documentation](https://internetcomputer.org/docs/home)
-- [Ethereum Wallet on ICP](https://github.com/your-ic-eth-wallet-repo)
 
 ---
 
