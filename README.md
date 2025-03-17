@@ -7,6 +7,7 @@ This repository provides an example of how to build an **off-chain AI agent** us
 - **Uses the Eliza AI Agent Framework**: Enables AI-driven automation with defined security rules.
 - **Interacts with the Internet Computer (IC)**: Communicates with IC-based Ethereum wallets without exposing private keys.
 - **Secure Transactions**: Implements rules to prevent unauthorized actions, making AI-driven blockchain interactions safer.
+- **Network Compatibility**: This project is designed to work exclusively with Sepolia ETH to ensure a stable and controlled testing environment.
 - **Customizable**: Developers can modify the agent’s behavior, transaction limits, and interaction flow.
 
 ### Original Demo & Technology Stack
