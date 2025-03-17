@@ -27,6 +27,7 @@ This repository provides an example of how to build an **off-chain AI agent** us
      nvm install 22.14.0
      nvm use 22.14.0
      ```
+
 3. **PNPM**: Install [PNPM](https://pnpm.io/installation) for package management.
 
 ---
