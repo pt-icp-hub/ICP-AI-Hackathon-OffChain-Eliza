@@ -37,7 +37,7 @@ This repository provides an example of how to build an **off-chain AI agent** us
 
 1. **Clone the Repo**: 
    ```bash
-   git clone https://github.com/kristoferlund/ic-eliza-eth-wallet.git
+   git clone https://github.com/pt-icp-hub/ICP-AI-Hackathon-OffChain-Eliza.git
    cd ic-eliza-eth-wallet
    ```
 
