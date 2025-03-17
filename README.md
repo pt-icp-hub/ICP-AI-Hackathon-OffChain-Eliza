@@ -11,6 +11,7 @@ This repository provides an example of how to build an **off-chain AI agent** us
 - **Customizable**: Developers can modify the agent’s behavior, transaction limits, and interaction flow.
 
 ### Original Demo & Technology Stack
+- You can find a video demo of this project [here](https://www.youtube.com/watch?v=Eql_qSas3so)
 - This project is based on the original demo from [Kristofer Lund](https://github.com/kristoferlund).
 - The backend consists of a **Rust canister** using the [ic-alloy](https://github.com/ic-alloy) library to interact with the Ethereum blockchain.
 - The frontend is built with **React and Vite**.
